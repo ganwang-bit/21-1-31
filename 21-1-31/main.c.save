@@ -1,0 +1,113 @@
+//#include <stdio.h>
+//#include <stdlib.h>
+//
+//int main()
+//{
+//    printf("Hello world!\n");
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int n,sum=1;
+//    scanf("%d",&n);
+//    n-=1;
+//    while(n>0)
+//    {
+//        sum=(sum+1)*2;
+//        n-=1;
+//    }
+//    printf("%d",sum);
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    int n,a,b,p,f1=1,f2=1,ftemp,count=3;
+//    scanf("%d%d%d%d",&n,&a,&b,&p);
+//    if(n==1)
+//        printf("%d",f1%p);
+//    else if(n==2)
+//        printf("%d",f2%p);
+//    else
+//    {
+//        while(count<=n)
+//        {
+//            ftemp=a*f1+b*f2;
+//            f1=f2;
+//            f2=ftemp;
+//            count++;
+//        }
+//        printf("%d",ftemp%p);
+//    }
+//    return 0;
+//}
+//#include<stdio.h>
+//int tan(int*arr,int n)
+//{
+//    int count=0,tmp=0;
+//    while(tmp<n)
+//    {
+//        count++;
+//        tmp+=arr[tmp];
+//    }
+//    return count;
+//}
+//int main()
+//{
+//    int n,i=0;
+//    scanf("%d",&n);
+//    int a[n],b[n],counta,countb;
+//    for(i=0;i<n;i++)
+//        scanf("%d",&a[i]);
+//    for(i=0;i<n;i++)
+//        scanf("%d",&b[i]);
+//    counta=tan(a,n);
+//    countb=tan(b,n);
+//    if(counta>=countb)
+//        printf("%d",countb);
+//    else
+//        printf("%d",counta);
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    printf("%g\n",6.315321311);
+//    printf("%f",6.3513);
+//    return 0;
+//}
+//#include<stdio.h>
+//int main()
+//{
+//    printf("%e",3122313.001);
+//    return 0;
+//}
+//#include<stdio.h>
+//#include<stdlib.h>
+//int main()
+//{
+//    printf("%d%d",EXIT_SUCCESS,EXIT_FAILURE);
+//    return 0;
+//}
+#include<stdio.h>
+int main()
+{
+
+    int line=1;
+    char temp;
+    while((temp=getchar()))
+    {
+        if(line==1)
+        {
+                
+        }
+        putchar(temp);
+        if(temp=='\n')
+        {
+            printf("%d.",line);
+            line++;
+        }
+    }
+    return 0;
+}
